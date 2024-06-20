@@ -13,7 +13,7 @@ import {
 import { bundlerActions, ENTRYPOINT_ADDRESS_V07 } from "permissionless";
 import React, { useEffect, useState } from "react";
 import { createPublicClient, http, parseAbi, encodeFunctionData } from "viem";
-import { sepolia } from "viem/chains";
+import { polygonAmoy } from "viem/chains";
 
 // @dev add your BUNDLER_URL, PAYMASTER_URL, and PASSKEY_SERVER_URL here
 
@@ -25,7 +25,7 @@ const PAYMASTER_URL =
 
 const PASSKEY_SERVER_URL =
   "https://passkeys.zerodev.app/api/v3/cd5209db-ce82-4405-87a7-3447aae3743f";
-const CHAIN = sepolia;
+const CHAIN = polygonAmoy;
 const entryPoint = ENTRYPOINT_ADDRESS_V07;
 
 const contractAddress = "0x34bE7f35132E97915633BC1fc020364EA5134863";
